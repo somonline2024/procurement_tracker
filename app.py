@@ -26,7 +26,7 @@ if uploaded_file:
     # Status Counts
     # -----------------------------
     delivered = (df["Status"] == "Delivered").sum()
-    inprogress = (df["Status"] == "Inprogress").sum()
+    inprogress = (df["Status"] == "InProgress").sum()
     hold = (df["Status"] == "Hold").sum()
     pending = (df["Status"] == "Pending").sum()
     total = len(df)
